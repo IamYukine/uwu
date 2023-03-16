@@ -1,0 +1,50 @@
+body{
+    font-family: garamond;
+    background-color: mistyrose;
+    color: rgb(62, 39, 35);
+    text-align: center;
+}
+aside{
+    width: 20%;
+    height: 600px;
+    margin: 30px;
+    box-shadow:  15px 15px 10px ;
+    color: dimgray;
+    overflow: scroll;
+    float: left;
+   
+}
+main{
+    width: 65%;
+    height: 600px;
+    float: left;
+    
+}
+#as{
+    width: 100%;
+}
+#big{
+    width: 500px;
+    margin: 30px;
+    box-shadow: 15px 15px 10px ;
+}
+img{
+    width: 140px;
+    padding: 2px;
+    
+}
+/* img:hover{
+    border: 1px dotted black;
+} */
+table{
+    border: 1px black dashed;
+}
+footer{
+    clear: both;
+}
+img.miniatura{
+    border-radius: 5%;
+}
+img.miniatura:hover{
+    border: 1px dotted black;
+}

@@ -1,0 +1,49 @@
+html{
+    font-family: garamond;
+}
+header{
+    background-image: linear-gradient(to bottom,#97b498,#c8e6c9);
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+aside{
+    background-color: #c8e6c9;
+    color: #005005;
+    width: 40%;
+    height: 600px;
+    float: left;
+
+}
+main{
+    color: #005005;
+    width: 60%;
+    height: 600px;
+    overflow: auto;
+    float: left;
+}
+footer{
+    background-image: linear-gradient(to bottom,#c8e6c9,#97b498);
+    color: white;
+    padding: 12px;
+    clear: both;
+}
+video{
+    width: 100%;
+}
+form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+input[button]{
+    background-color:  #97b498;
+    color: white;
+
+}
+a:hover{
+    background-color: white;
+    color: #97b498;
+}

@@ -1,0 +1,45 @@
+html{
+    font-family: Georgia;
+}
+header, footer{
+    background-color: #c75b39;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav{
+    background-color: #ff8a65;
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+    float: left;
+}
+
+main{
+    background-color: snow;
+    width: 75%;
+    height: 500px;
+    padding-top: 50px;
+    text-align: center;
+    float: left;
+}
+
+img{
+    width: 25%;
+    margin: 10px;
+    box-shadow: 15px 15px 5px dimgray;
+}
+
+li{
+    margin: 5px;
+}
+
+ul::marker,li::marker{
+ color: snow;
+}
+
+h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

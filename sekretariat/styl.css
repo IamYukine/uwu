@@ -1,0 +1,43 @@
+html{
+    font-family: helvetica;
+    background-color: #DDD;
+    color:#546E7A ;
+
+}
+main,aside{
+    background-color: white;
+    height: 600px;
+    margin: 20px;
+    box-shadow: 20px 20px 20px grey;
+}
+main{
+    width: 50%;
+    float: left;
+}
+aside{
+    width: 30%;
+    float: left;
+}
+footer{
+    background-color:#5C6BC0 ;
+    color: white;
+    padding: 30px;
+    clear: both;
+}
+img{
+    width: 100%;
+}
+h1{
+    background-color:#5C6BC0 ;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    font-weight: 300;
+
+}
+h3,p{
+    padding-left: 30px;
+}
+h2,h4{
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Galeria Obrazów</h1>
+    </header>
+    
+    <aside>
+        <img src="zdjecie.jpg" alt="zdjecie dnia" id="as">
+        <h3>Zdjęcia opublikowali</h3>
+        <table>
+            <tr>
+                <td>Anna Porada</td>
+                <td>10 zdjęć</td>
+            </tr>
+            <tr>
+                <td>Krzysztof Wasilewski</td>
+                <td>12 zdjęć</td>
+            </tr>
+            <tr>
+                <td>Monika Kowalska</td>
+                <td>4 zdjęcia</td>
+            </tr>
+        </table>
+    </aside>
+    <main> 
+        <input type="button" value="prev" onclick="prev()">
+        <img src="1.jpg" alt="galeria" id="big">
+        <input type="button" value="next" onclick="next()">
+        <hr>
+        
+        <img src="1.jpg" alt="miniatura" onclick="zmiana('1.jpg',1)" class="miniatura">
+        <img src="2.jpg" alt="miniatura" onclick="zmiana('2.jpg',2)" class="miniatura">
+        <img src="3.jpg" alt="miniatura" onclick="zmiana('3.jpg',3)" class="miniatura">
+        <img src="4.jpg" alt="miniatura" onclick="zmiana('4.jpg',4)" class="miniatura">
+        <img src="5.jpg" alt="miniatura" onclick="zmiana('5.jpg',5)" class="miniatura">
+    
+    </main>    
+
+    <footer>
+        <a href="https://pixabay.com/">Więcej obrazów</a>
+        <p>Galerię wykonał</p>
+    </footer>
+    <script>
+    // var big = document.getElementById("big").src;
+    // console.log(big);
+// function next(){
+//     if(document.getElementById("big").src = "1.jpg")
+//     document.getElementById("big").src = "2.jpg";
+    
+    
+//     else if(document.getElementById("big").src = "2.jpg")
+//     document.getElementById("big").src = "3.jpg";
+    
+//     else if(document.getElementById("big").src = "3.jpg")
+//     document.getElementById("big").src = "4.jpg";
+    
+//     else if(document.getElementById("big").src = "4.jpg")
+//     document.getElementById("big").src = "5.jpg";
+    
+//     else 
+//     document.getElementById("big").src = "1.jpg";
+// }
+let nr = 1
+function zmiana(src,numer){
+    let glowne = document.getElementById("big")
+    glowne.src = src
+    nr = numer
+}
+function prev(){
+    let aktualne = document.getElementById("big")
+    nr--
+    if(nr == 0) nr = 5
+    if(nr == 1) aktualne.src = "1.jpg"
+    if(nr == 2) aktualne.src = "2.jpg"
+    if(nr == 3) aktualne.src = "3.jpg"
+    if(nr == 4) aktualne.src = "4.jpg"
+    if(nr == 5) aktualne.src = "5.jpg"
+}
+function next(){
+    let aktualne = document.getElementById("big")
+    nr++
+    if(nr == 6) nr = 1
+    if(nr == 1) aktualne.src = "1.jpg"
+    if(nr == 2) aktualne.src = "2.jpg"
+    if(nr == 3) aktualne.src = "3.jpg"
+    if(nr == 4) aktualne.src = "4.jpg"
+    if(nr == 5) aktualne.src = "5.jpg"
+}
+
+
+    </script>
+</body>
+</html>
